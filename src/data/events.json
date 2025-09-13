@@ -12,7 +12,7 @@
       "type": "academic",
       "organizer": "Academic Committee",
       "contact": "academic@college.edu",
-      "image": "./Research Symposium.avif"
+      "image": "/Research Symposium.avif"
     },
     {
       "id": 2,
@@ -26,7 +26,7 @@
       "type": "academic",
       "organizer": "Math Club",
       "contact": "mathclub@college.edu",
-      "image": "./math-workshop.avif"
+      "image": "/math-workshop.avif"
     },
     {
       "id": 3,
@@ -40,7 +40,7 @@
       "type": "academic",
       "organizer": "Science Committee",
       "contact": "science@college.edu",
-      "image": "./science-fair.avif"
+      "image": "/science-fair.avif"
     },
     {
       "id": 4,
@@ -54,7 +54,7 @@
       "type": "academic",
       "organizer": "Literary Club",
       "contact": "litclub@college.edu",
-      "image": "./literature-seminar.avif"
+      "image": "/literature-seminar.avif"
     },
     {
       "id": 5,
@@ -68,7 +68,7 @@
       "type": "technical",
       "organizer": "Tech Club",
       "contact": "techclub@college.edu",
-      "image": "./technologyfestival.avif"
+      "image": "/technologyfestival.avif"
     },
     {
       "id": 6,
@@ -82,7 +82,7 @@
       "type": "technical",
       "organizer": "AI Research Group",
       "contact": "ai-research@college.edu",
-      "image": "./artificialintelligence.avif"
+      "image": "/artificialintelligence.avif"
     },
     {
       "id": 7,
@@ -96,7 +96,7 @@
       "type": "technical",
       "organizer": "Coding Club",
       "contact": "codingclub@college.edu",
-      "image": "./hackathocoding.avif"
+      "image": "/hackathocoding.avif"
     },
     {
       "id": 8,
@@ -110,7 +110,7 @@
       "type": "technical",
       "organizer": "Cyber Club",
       "contact": "cyberclub@college.edu",
-      "image": "./cybersecurity.avif"
+      "image": "/cybersecurity.avif"
     },
     {
       "id": 9,
@@ -124,7 +124,7 @@
       "type": "cultural",
       "organizer": "Cultural Committee",
       "contact": "cultural@college.edu",
-      "image": "./culturaldance.avif"
+      "image": "/culturaldance.avif"
     },
     {
       "id": 10,
@@ -138,7 +138,7 @@
       "type": "cultural",
       "organizer": "Art Club",
       "contact": "artclub@college.edu",
-      "image": "./artpainting.avif"
+      "image": "/artpainting.avif"
     },
     {
       "id": 11,
@@ -152,7 +152,7 @@
       "type": "cultural",
       "organizer": "Photography Club",
       "contact": "photo@college.edu",
-      "image": "./photography.avif"
+      "image": "/photography.avif"
     },
     {
       "id": 12,
@@ -166,7 +166,7 @@
       "type": "cultural",
       "organizer": "Drama Club",
       "contact": "drama@college.edu",
-      "image": "./dramatheatre.avif"
+      "image": "/dramatheatre.avif"
     },
     {
       "id": 13,
@@ -180,7 +180,7 @@
       "type": "sports",
       "organizer": "Sports Committee",
       "contact": "sports@college.edu",
-      "image": "./sportsstadium.webp"
+      "image": "/sportsstadium.webp"
     },
     {
       "id": 14,
@@ -194,7 +194,7 @@
       "type": "sports",
       "organizer": "Cricket Club",
       "contact": "cricket@college.edu",
-      "image": "./cricket.webp"
+      "image": "/cricket.webp"
     },
     {
       "id": 15,
@@ -208,7 +208,7 @@
       "type": "sports",
       "organizer": "Football Club",
       "contact": "football@college.edu",
-      "image": "./footballsoccer.webp"
+      "image": "/footballsoccer.webp"
     },
     {
       "id": 16,
@@ -222,7 +222,7 @@
       "type": "sports",
       "organizer": "Basketball Club",
       "contact": "basketball@college.edu",
-      "image": "./basketball.avif"
+      "image": "/basketball.avif"
     },
    
     {
@@ -237,7 +237,7 @@
       "type": "sports",
       "organizer": "Badminton Club",
       "contact": "badminton@college.edu",
-      "image": "./badminton.avif"
+      "image": "/badminton.avif"
     },
     {
       "id": 21,
@@ -251,7 +251,7 @@
       "type": "health",
       "organizer": "Wellness Club",
       "contact": "wellness@college.edu",
-      "image": "./yoga.avif"
+      "image": "/yoga.avif"
     },
     {
       "id": 22,
@@ -265,7 +265,7 @@
       "type": "social",
       "organizer": "NSS Committee",
       "contact": "nss@college.edu",
-      "image": "./blooddonation.avif"
+      "image": "/blooddonation.avif"
     },
     {
       "id": 23,
@@ -279,7 +279,7 @@
       "type": "social",
       "organizer": "Eco Club",
       "contact": "eco@college.edu",
-      "image": "./treeplant.avif"
+      "image": "/treeplant.avif"
     },
     {
       "id": 24,
@@ -293,7 +293,7 @@
       "type": "social",
       "organizer": "NSS Volunteers",
       "contact": "nss@college.edu",
-      "image": "./cleanliness.avif"
+      "image": "/cleanliness.avif"
     },
     {
       "id": 25,
@@ -307,7 +307,7 @@
       "type": "technical",
       "organizer": "E-Cell",
       "contact": "ecell@college.edu",
-      "image": "./entrepreneur.avif"
+      "image": "/entrepreneur.avif"
     },
     {
       "id": 26,
@@ -321,7 +321,7 @@
       "type": "social",
       "organizer": "Alumni Association",
       "contact": "alumni@college.edu",
-      "image": "./alumni.webp"
+      "image": "/alumni.webp"
     },
     {
       "id": 27,
@@ -335,7 +335,7 @@
       "type": "cultural",
       "organizer": "Fest Committee",
       "contact": "fest@college.edu",
-      "image": "./festinaug.avif"
+      "image": "/festinaug.avif"
     },
     
     {
@@ -350,7 +350,7 @@
       "type": "technical",
       "organizer": "Robotics Club",
       "contact": "robotics@college.edu",
-      "image": "./robotics.avif"
+      "image": "/robotics.avif"
     },
     {
       "id": 31,
@@ -364,7 +364,7 @@
       "type": "technical",
       "organizer": "Science Club",
       "contact": "science@college.edu",
-      "image": "./scienceexpo.webp"
+      "image": "/scienceexpo.webp"
     },
     {
       "id": 32,
@@ -378,7 +378,7 @@
       "type": "technical",
       "organizer": "Math Club",
       "contact": "math@college.edu",
-      "image": "./mathquiz.avif"
+      "image": "/mathquiz.avif"
     },
     {
       "id": 33,
@@ -392,7 +392,7 @@
       "type": "cultural",
       "organizer": "Debate Club",
       "contact": "debate@college.edu",
-      "image": "./debate.avif"
+      "image": "/debate.avif"
     },
     {
       "id": 34,
@@ -406,7 +406,7 @@
       "type": "competition",
       "organizer": "Strategy Club",
       "contact": "strategy@college.edu",
-      "image": "./business-strategy.webp"
+      "image": "/business-strategy.webp"
     },
     {
       "id": 35,
@@ -420,7 +420,7 @@
       "type": "fair",
       "organizer": "Entrepreneurship Society",
       "contact": "entrepreneurship@college.edu",
-      "image": "./entrepreneurship-fair.webp"
+      "image": "/entrepreneurship-fair.webp"
     },
     {
       "id": 36,
@@ -434,7 +434,7 @@
       "type": "competition",
       "organizer": "Marketing Club",
       "contact": "marketing@college.edu",
-      "image": "./marketing-mania.webp"
+      "image": "/marketing-mania.webp"
     },
     {
       "id": 37,
@@ -448,7 +448,7 @@
       "type": "seminar",
       "organizer": "Finance Society",
       "contact": "finance@college.edu",
-      "image": "./finance-forum.webp"
+      "image": "/finance-forum.webp"
     },
     {
       "id": 38,
@@ -462,7 +462,7 @@
       "type": "workshop",
       "organizer": "Physics Society",
       "contact": "physics@college.edu",
-      "image": "./quantum-mechanics.webp"
+      "image": "/quantum-mechanics.webp"
     },
     {
       "id": 39,
@@ -476,7 +476,7 @@
       "type": "seminar",
       "organizer": "Astronomy Club",
       "contact": "astronomy@college.edu",
-      "image": "./astrophysics-seminar.webp"
+      "image": "/astrophysics-seminar.webp"
     },
     {
       "id": 40,
@@ -490,7 +490,7 @@
       "type": "festival",
       "organizer": "Literary Society",
       "contact": "literature@college.edu",
-      "image": "./literary-festival.webp"
+      "image": "/literary-festival.webp"
     },
     {
       "id": 41,
@@ -504,7 +504,7 @@
       "type": "performance",
       "organizer": "Drama Club",
       "contact": "drama@college.edu",
-      "image": "./drama-night.webp"
+      "image": "/drama-night.webp"
     }
   ]
 } 
