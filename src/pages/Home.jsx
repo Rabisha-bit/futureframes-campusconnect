@@ -11,11 +11,13 @@ import { FaBookmark, FaRegBookmark } from "react-icons/fa";
 import { toggleBookmark, isBookmarked } from "../utils/bookmarkUtils";
 import useDocumentTitle from "../Hooks/useDocumentTitle";
 
+
 const Home = () => {
+  
   useDocumentTitle("Home - CampusConnect");
   const navigate = useNavigate();
   const [events, setEvents] = useState([]);
-  const [ setTimeLeft ] = useState({});
+  const [, setTimeLeft ] = useState({});
   const [showModal, setShowModal] = useState(true);
 
   //  input name aur confirmed name alag state
@@ -147,9 +149,9 @@ const Home = () => {
               onChange={(e) => setUserType(e.target.value)}
             >
               <option value="">Select user type</option>
-              <option value="student">Student</option>
-              <option value="staff">Staff</option>
-              <option value="guest">Guest</option>
+              <option value="Student">Student</option>
+              <option value="Staff">Staff</option>
+              <option value="Guest">Guest</option>
             </select>
             <button onClick={handleSave} disabled={!!error || !username.trim()}>
               Continue
@@ -160,14 +162,14 @@ const Home = () => {
 
       {/* ----------------------- Welcome Section ----------------------- */}
       <section className="home-welcome-section">
-        <h1 className="home-welcome-subtitle">
+        <h1 className="home-welcome-subtitle mt-3">
           {savedName
-            ? `Welcome ${savedName} As A ${userType} to CampusConnect`
+            ? `Welcome ${savedName} As A ${userType} To CampusConnect`
             : "Welcome to Campus Connect"}
         </h1>
-        {/* <p className="home-welcome-subtitle">
+         {/* <p className="home-welcome-subtitle">
           Event Hub – Stay Updated, Stay Involved!
-        </p> */}
+        </p>  */}
       </section>
 
       {/* ----------------------- Banner Section ----------------------- */}

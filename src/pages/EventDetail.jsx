@@ -52,7 +52,7 @@ const EventDetail = () => {
           </div>
           <Link to="/register"> 
             <button
-              className="register-btn mt-3"
+              className="reg-btn mt-3"
             >
               Register Now
             </button>
