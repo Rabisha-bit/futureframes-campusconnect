@@ -371,10 +371,10 @@ const Home = () => {
           Event Gallery
         </h2>
         <div className="home-gallery-grid">
-          <img src="/artificialintelligence.avif" alt="gallery1" />
-          <img src="/basketball.avif" alt="gallery2" />
-          <img src="/culturaldance.avif" alt="gallery3" />
-          <img src="/hackathocoding.avif" alt="gallery4" />
+          <img src="WorkshopAI.jpg" alt="gallery1" />
+          <img src="BasketballLeague.jpg" alt="gallery2" />
+          <img src="BusinessStrategySummit.jpg" alt="gallery3" />
+          <img src="DebateCompetition.jpg" alt="gallery4" />
         </div>
       </section>
 

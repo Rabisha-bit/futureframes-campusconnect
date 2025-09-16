@@ -11,9 +11,12 @@ import RegisterForm from './pages/Register';
 import EventsCalendar from './pages/EventsCalendar';
 import Bookmark from './pages/Bookmark';
 import Event from './pages/Event';
+import ScrollToTop from './Hooks/ScrollToTop';
 
 function App() {
   return (
+    <>
+    <ScrollToTop />
     <Routes>
       <Route path='/' Component={Home} />
       <Route path='/event' Component={Event} />
@@ -27,6 +30,7 @@ function App() {
       <Route path='/register' Component={RegisterForm} />
       <Route path='/bookmark' Component={Bookmark} />
     </Routes>
+    </>
   );
 }
 
