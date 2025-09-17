@@ -1,37 +1,38 @@
 [
-  {
-    "id": 1,
-    "title": "TechFest 2025",
-    "date": "2025-07-20T18:00:00",
-    "venue": "Lahore Stadium",
-    "description": "A dynamic technology festival showcasing innovation, coding competitions, and futuristic hackathons.",
-    "image": "/Hackathon2023.jpg",
-    "link": "/events/techfest-2025"
-  },
-  {
-    "id": 2,
-    "title": "Cultural Week",
-    "date": "2025-08-05T10:00:00",
-    "venue": "City Cultural Center",
-    "description": "A vibrant cultural showcase featuring music, art, traditions, performances, and exhibitions for all.",
-    "image": "/CulturalNight.jpg",
-    "link": "/events/cultural-week"
-  },
-  {
-    "id": 3,
-    "title": "Quantum Mechanics Talk",
-    "description": "A guest lecture on modern concepts of quantum mechanics.",
-    "date": "2025-08-05T10:00:00",
-    "venue": "Seminar Hall",
-    "image": "/QuantumMechanicsWorkshop.jpg",
-    "link": "/events/cultural-week"
-  },
-  {
-    "id": 11,
-    "title": "Photography Contest",
-    "description": "A competition capturing the beauty of campus life and creative themes.",
-    "date": "2025-09-15T09:00:00",
-    "venue": "Auditorium Lobby",
-    "image": "/PhotographyContest.jpg"
-  }
+ {
+      "id": 11,
+      "title": "Photography Contest",
+      "description": "A competition capturing the beauty of campus life and creative themes through the lens.",
+      "date": "2025-11-18",
+      "time": "02:00 PM - 06:00 PM",
+      "venue": "Auditorium Lobby",
+      "image": "/PhotographyContest.jpg"
+    },
+    {
+      "id": 15,
+      "title": "Football Championship",
+      "description": "Annual football tournament with multiple college teams competing for the championship title.",
+      "date": "2025-12-10",
+      "time": "09:00 AM - 06:00 PM",
+      "venue": "Football Field",
+      "image": "/FootballChampionship.jpg"
+    },
+    {
+      "id": 10,
+      "title": "Art Exhibition",
+      "description": "An exhibition showcasing creative artwork and paintings by Fine Arts students.",
+      "date": "2024-11-12",
+      "time": "10:00 AM - 06:00 PM",
+      "venue": "Fine Arts Block",
+      "image": "/ArtExhibition.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Science Fair",
+      "description": "Exhibition of innovative scientific projects by students across all departments.",
+      "date": "2024-11-15",
+      "time": "10:00 AM - 05:00 PM",
+      "venue": "Science Block",
+      "image": "/ScienceFair.jpg"
+    }
 ]

@@ -90,7 +90,7 @@ function Event() {
       {/* Page Header */}
       <header className="bg-primary text-white text-center py-5 m-5">
         <div className="container">
-          <h1>College Events</h1>
+          <h1>Events Detail / Event Catalog</h1>
           <p className="lead">
             Discover and participate in various events happening across the campus
           </p>
@@ -128,6 +128,9 @@ function Event() {
             <div className="col-12">
               <h4>Filter by Department:</h4>
               <div className="filter-buttons">
+                <button className="btn btn-outline-secondary filter-btn" onClick={() => handleDepartmentFilter("all")}>
+                  All Departments
+                </button>
                 <button className="btn btn-outline-secondary filter-btn" onClick={() => handleDepartmentFilter("Computer Science")}>
                   Computer Science
                 </button>
@@ -143,12 +146,7 @@ function Event() {
                 <button className="btn btn-outline-secondary filter-btn" onClick={() => handleDepartmentFilter("Physics")}>
                   Physics
                 </button>
-                <button className="btn btn-outline-secondary filter-btn" onClick={() => handleDepartmentFilter("English")}>
-                  English
-                </button>
-                <button className="btn btn-outline-secondary filter-btn" onClick={() => handleDepartmentFilter("all")}>
-                  All Departments
-                </button>
+                
               </div>
             </div>
           </div>
@@ -159,14 +157,11 @@ function Event() {
               <div className="input-group">
                 <input
                   type="text"
-                  className="form-control"
+                  className="form-control sort-select"
                   placeholder="Search events..."
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
                 />
-                <button className="btn btn-outline-secondary" type="button" onClick={() => setSearchTerm("")}>
-                  <i className="bi bi-x-circle" />
-                </button>
               </div>
             </div>
 

@@ -11,20 +11,28 @@ import { FaBookmark, FaRegBookmark } from "react-icons/fa";
 import { toggleBookmark, isBookmarked } from "../utils/bookmarkUtils";
 import useDocumentTitle from "../Hooks/useDocumentTitle";
 
-
 const Home = () => {
-  
   useDocumentTitle("Home - CampusConnect");
   const navigate = useNavigate();
   const [events, setEvents] = useState([]);
-  const [, setTimeLeft ] = useState({});
+  const [, setTimeLeft] = useState({});
   const [showModal, setShowModal] = useState(true);
 
-  //  input name aur confirmed name alag state
-  const [username, setUsername] = useState(""); 
-  const [savedName, setSavedName] = useState(""); 
+  const [username, setUsername] = useState("");
+  const [savedName, setSavedName] = useState("");
   const [userType, setUserType] = useState("");
-  const [error, setError] = useState(""); 
+  const [error, setError] = useState("");
+
+  // 🔹 check sessionStorage pehle hi
+  useEffect(() => {
+    const storedName = sessionStorage.getItem("savedName");
+    const storedType = sessionStorage.getItem("userType");
+    if (storedName && storedType) {
+      setSavedName(storedName);
+      setUserType(storedType);
+      setShowModal(false); // modal mat dikhao agar pehle se saved hai
+    }
+  }, []);
 
   useEffect(() => {
     fetch("/upcomingevents.json")
@@ -32,7 +40,6 @@ const Home = () => {
       .then((data) => setEvents(data));
   }, []);
 
-  // live update countdown every second
   useEffect(() => {
     const timer = setInterval(() => {
       const countdowns = {};
@@ -41,7 +48,6 @@ const Home = () => {
       });
       setTimeLeft(countdowns);
     }, 1000);
-
     return () => clearInterval(timer);
   }, [events]);
 
@@ -49,18 +55,14 @@ const Home = () => {
     const eventTime = new Date(eventDate).getTime();
     const now = new Date().getTime();
     const diff = eventTime - now;
-
     if (diff <= 0) return "Event Started!";
-
     const days = Math.floor(diff / (1000 * 60 * 60 * 24));
     const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
     const minutes = Math.floor((diff / (1000 * 60)) % 60);
     const seconds = Math.floor((diff / 1000) % 60);
-
     return `${days}d ${hours}h ${minutes}m ${seconds}s left`;
   };
 
-  // Stats counters
   const stats = [
     { label: "Events Organized", target: 120 },
     { label: "Students Registered", target: 5000 },
@@ -104,9 +106,8 @@ const Home = () => {
     }, stepTime);
   };
 
-  // Regex validation function
   const validateName = (name) => {
-    const regex = /^[A-Za-z\s]+$/; 
+    const regex = /^[A-Za-z\s]+$/;
     if (!regex.test(name)) {
       setError("Name must contain only alphabets.");
       return false;
@@ -115,15 +116,16 @@ const Home = () => {
     return true;
   };
 
-  // Handle save
+  // 🔹 Save & store in sessionStorage
   const handleSave = () => {
     if (username.trim() && validateName(username)) {
-      setSavedName(username); 
-      setShowModal(false); 
+      setSavedName(username);
+      sessionStorage.setItem("savedName", username);
+      sessionStorage.setItem("userType", userType);
+      setShowModal(false);
     }
   };
 
-  // Live input validation
   const handleChange = (e) => {
     const value = e.target.value;
     setUsername(value);
@@ -141,7 +143,7 @@ const Home = () => {
               type="text"
               placeholder="Enter your name"
               value={username}
-              onChange={handleChange} 
+              onChange={handleChange}
             />
             {error && <p className="input-error">{error}</p>}
             <select
@@ -153,7 +155,7 @@ const Home = () => {
               <option value="Staff">Staff</option>
               <option value="Guest">Guest</option>
             </select>
-            <button onClick={handleSave} disabled={!!error || !username.trim()}>
+            <button onClick={handleSave} disabled={!!error || !username.trim() || !userType}>
               Continue
             </button>
           </div>
@@ -167,99 +169,94 @@ const Home = () => {
             ? `Welcome ${savedName} As A ${userType} To CampusConnect`
             : "Welcome to Campus Connect"}
         </h1>
-         {/* <p className="home-welcome-subtitle">
-          Event Hub – Stay Updated, Stay Involved!
-        </p>  */}
       </section>
 
-      {/* ----------------------- Banner Section ----------------------- */}
-      <div className="home-banner-wrapper">
+    {/* ----------------------- Banner Section ----------------------- */}
+<div className="home-banner-wrapper">
+  <div
+    id="homeCarousel"
+    className="carousel slide home-banner"
+    data-bs-ride="carousel"
+  >
+    {/* Indicators */}
+    <div className="carousel-indicators">
+      {slides.map((_, i) => (
+        <button
+          type="button"
+          key={i}
+          data-bs-target="#homeCarousel"
+          data-bs-slide-to={i}
+          className={i === 0 ? "active" : ""}
+          aria-current={i === 0 ? "true" : undefined}
+          aria-label={`Slide ${i + 1}`}
+        />
+      ))}
+    </div>
+
+    {/* Slides */}
+    <div className="carousel-inner">
+      {slides.map((slide, i) => (
         <div
-          id="homeCarousel"
-          className="carousel slide home-banner"
-          data-bs-ride="carousel"
+          key={i}
+          className={`carousel-item ${i === 0 ? "active" : ""}`}
         >
-          <div className="carousel-indicators">
-            {slides.map((_, i) => (
-              <button
-                type="button"
-                key={i}
-                data-bs-target="#homeCarousel"
-                data-bs-slide-to={i}
-                className={i === 0 ? "active" : ""}
-                aria-current={i === 0 ? "true" : undefined}
-                aria-label={`Slide ${i + 1}`}
-              />
-            ))}
-          </div>
-
-          <div className="carousel-inner">
-            {slides.map((slide, i) => (
-              <div
-                key={i}
-                className={`carousel-item ${i === 0 ? "active" : ""}`}
-              >
-                <div
-                  className="carousel-img"
-                  style={{
-                    backgroundImage: `url(${slide.img})`,
-                    backgroundSize: "cover",
-                    backgroundPosition: "center",
-                    height: "500px",
-                    position: "relative",
-                  }}
-                >
-                  <div className="carousel-overlay"></div>
-                  <div className="carousel-caption d-none d-md-block">
-                    <h2>{slide.title}</h2>
-                    <p>{slide.desc}</p>
-                    {i === 0 && (
-                      <Link to="/event">
-                        <button className="home-slide-btn">Explore Now</button>
-                      </Link>
-                    )}
-                    {i === 1 && (
-                      <Link to="/register">
-                        <button className="home-slide-btn">Join Us</button>
-                      </Link>
-                    )}
-                    {i === 2 && (
-                      <Link to="/contact">
-                        <button className="home-slide-btn">Contact Us</button>
-                      </Link>
-                    )}
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          <button
-            className="carousel-control-prev"
-            type="button"
-            data-bs-target="#homeCarousel"
-            data-bs-slide="prev"
+          <div
+            className="carousel-img"
+            style={{
+              backgroundImage: `url(${slide.img})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              height: "500px",
+              position: "relative",
+            }}
           >
-            <span
-              className="carousel-control-prev-icon"
-              aria-hidden="true"
-            ></span>
-            <span className="visually-hidden">Previous</span>
-          </button>
-          <button
-            className="carousel-control-next"
-            type="button"
-            data-bs-target="#homeCarousel"
-            data-bs-slide="next"
-          >
-            <span
-              className="carousel-control-next-icon"
-              aria-hidden="true"
-            ></span>
-            <span className="visually-hidden">Next</span>
-          </button>
+            <div className="carousel-overlay"></div>
+            <div className="carousel-caption custom-caption">
+              <h2>{slide.title}</h2>
+              <p>{slide.desc}</p>
+              {i === 0 && (
+                <Link to="/event">
+                  <button className="home-slide-btn">Explore Now</button>
+                </Link>
+              )}
+              {i === 1 && (
+                <Link to="/register">
+                  <button className="home-slide-btn">Join Us</button>
+                </Link>
+              )}
+              {i === 2 && (
+                <Link to="/contact">
+                  <button className="home-slide-btn">Contact Us</button>
+                </Link>
+              )}
+            </div>
+          </div>
         </div>
-      </div>
+      ))}
+    </div>
+
+    {/* Controls */}
+    <button
+      className="carousel-control-prev"
+      type="button"
+      data-bs-target="#homeCarousel"
+      data-bs-slide="prev"
+    >
+      <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span className="visually-hidden">Previous</span>
+    </button>
+    <button
+      className="carousel-control-next"
+      type="button"
+      data-bs-target="#homeCarousel"
+      data-bs-slide="next"
+    >
+      <span className="carousel-control-next-icon" aria-hidden="true"></span>
+      <span className="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
 
       {/* ----------------------- Upcoming Events ----------------------- */}
       <section className="home-events-section">
@@ -371,10 +368,10 @@ const Home = () => {
           Event Gallery
         </h2>
         <div className="home-gallery-grid">
-          <img src="WorkshopAI.jpg" alt="gallery1" />
-          <img src="BasketballLeague.jpg" alt="gallery2" />
-          <img src="BusinessStrategySummit.jpg" alt="gallery3" />
-          <img src="DebateCompetition.jpg" alt="gallery4" />
+          <img src="/WorkshopAI.jpg" alt="gallery1" />
+          <img src="/CricketTournament.jpg" alt="gallery2" />
+          <img src="/Hackathon2023.jpg" alt="gallery3" />
+          <img src="/ArtExhibition.jpg" alt="gallery4" />
         </div>
       </section>
 
@@ -444,7 +441,8 @@ const EventCard = ({ event, navigate }) => {
           </span>
           <span>{new Date(event.date).toDateString()}</span>
         </div>
-        <Countdown date={event.date} />
+        {/* ek card (id=1) pe countdown nahi hoga */}
+        {event.id !== 1 && <Countdown date={event.date} />}
         <button
           className="home-btn"
           onClick={() => navigate(`/upcoming/${event.id}`)}

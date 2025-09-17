@@ -43,20 +43,6 @@
       "image": "/ScienceFair.jpg"
     },
     {
-      "id": 4,
-      "title": "Literature Seminar",
-      "description": "A seminar discussing contemporary literature and critical analysis methods.",
-      "longdescription": "The Literature Seminar provides an immersive environment for exploring contemporary literature and critical methods. Participants engage in interactive discussions, analyze texts, and explore literary themes and genres. The seminar fosters analytical skills, creative thinking, and cultural appreciation, offering insights from expert speakers and opportunities for networking with literature enthusiasts.",
-      "date": "2025-12-05",
-      "time": "11:00 AM - 02:00 PM",
-      "venue": "College Library",
-      "department": "English",
-      "type": "academic",
-      "organizer": "Literary Club",
-      "contact": "litclub@college.edu",
-      "image": "/LiteratureSeminar.jpg"
-    },
-    {
       "id": 5,
       "title": "Annual Tech Fest",
       "description": "A grand technical festival featuring coding competitions, robotics challenges, and tech talks from industry experts.",
@@ -99,20 +85,6 @@
       "image": "/Hackathon2023.jpg"
     },
     {
-      "id": 8,
-      "title": "Cyber Security Seminar",
-      "description": "A seminar on ethical hacking, cyber laws, and digital forensics by industry experts.",
-      "longdescription": "The Cyber Security Seminar provides insights into ethical hacking, cyber laws, and digital forensics. Participants learn about security protocols, risk management, and threat detection from industry professionals. The seminar enhances awareness, technical skills, and critical thinking in cybersecurity, offering networking opportunities and practical knowledge applicable to technology and business environments.",
-      "date": "2025-11-22",
-      "time": "11:00 AM - 02:00 PM",
-      "venue": "Seminar Hall B",
-      "department": "Computer Science",
-      "type": "technical",
-      "organizer": "Cyber Club",
-      "contact": "cyberclub@college.edu",
-      "image": "/CyberSecuritySeminar.jpg"
-    },
-    {
       "id": 9,
       "title": "Cultural Night",
       "description": "An evening filled with music, dance, and theatrical performances.",
@@ -153,20 +125,6 @@
       "organizer": "Photography Club",
       "contact": "photo@college.edu",
       "image": "/PhotographyContest.jpg"
-    },
-    {
-      "id": 12,
-      "title": "Drama Festival",
-      "description": "Stage plays and skits performed by the drama society.",
-      "longdescription": "The Drama Festival features performances of stage plays, skits, and dramatic arts by student groups. It fosters creativity, public speaking, and teamwork. Attendees experience storytelling, acting techniques, and cultural expression, highlighting the talents and dedication of the drama society while promoting artistic appreciation across the campus.",
-      "date": "2022-11-25",
-      "time": "04:00 PM - 09:00 PM",
-      "venue": "Main Stage",
-      "department": "Fine Arts",
-      "type": "cultural",
-      "organizer": "Drama Club",
-      "contact": "drama@college.edu",
-      "image": "/DramaFestival.jpg"
     },
     {
       "id": 13,
@@ -212,93 +170,6 @@
     },
     {
       "id": 16,
-      "title": "Basketball League",
-      "description": "Inter-college basketball competition with knockout rounds.",
-      "longdescription": "The Basketball League features knockout-style competitions among college teams, promoting athletic skill, team coordination, and competitive spirit. Participants engage in high-energy games while enhancing fitness, strategy, and sportsmanship. Spectators enjoy dynamic matches and support campus sports culture.",
-      "date": "2022-12-15",
-      "time": "10:00 AM - 04:00 PM",
-      "venue": "Basketball Court",
-      "department": "Physical Education",
-      "type": "sports",
-      "organizer": "Basketball Club",
-      "contact": "basketball@college.edu",
-      "image": "/BasketballLeague.jpg"
-    },
-   
-    {
-      "id": 20,
-      "title": "Badminton League",
-      "description": "Inter-college badminton competition with mixed doubles.",
-      "longdescription": "The Badminton League brings together students from different colleges to participate in singles, doubles, and mixed doubles. The event promotes agility, reflexes, and sportsmanship while creating a fun and competitive environment.",
-      "date": "2022-12-28",
-      "time": "09:00 AM - 04:00 PM",
-      "venue": "Badminton Court",
-      "department": "Physical Education",
-      "type": "sports",
-      "organizer": "Badminton Club",
-      "contact": "badminton@college.edu",
-      "image": "/BadmintonLeague.jpg"
-    },
-    {
-      "id": 21,
-      "title": "Yoga Workshop",
-      "description": "Session on yoga, meditation, and wellness practices.",
-      "longdescription": "The Yoga Workshop introduces students to yoga practices, meditation techniques, and mindfulness. Participants gain skills for stress management, flexibility, and overall wellness. The session emphasizes the importance of physical and mental health for academic and personal growth.",
-      "date": "2023-01-10",
-      "time": "07:00 AM - 09:00 AM",
-      "venue": "Wellness Center",
-      "department": "Physical Education",
-      "type": "health",
-      "organizer": "Wellness Club",
-      "contact": "wellness@college.edu",
-      "image": "/YogaWorkshop.jpg"
-    },
- 
-    {
-      "id": 25,
-      "title": "Entrepreneurship Summit",
-      "description": "Talks and workshops on startups, innovation, and leadership.",
-      "longdescription": "The Entrepreneurship Summit gathers budding entrepreneurs, investors, and mentors to discuss innovation, business models, and leadership. Students learn about startup culture, pitching ideas, and networking opportunities to build their entrepreneurial skills.",
-      "date": "2023-02-18",
-      "time": "10:00 AM - 05:00 PM",
-      "venue": "Auditorium",
-      "department": "Management",
-      "type": "technical",
-      "organizer": "E-Cell",
-      "contact": "ecell@college.edu",
-      "image": "/EntrepreneurshipSummit.jpg"
-    },
-   
-    {
-      "id": 27,
-      "title": "Fest Inauguration",
-      "description": "Opening ceremony of the annual fest with chief guest.",
-      "longdescription": "The Fest Inauguration marks the beginning of the annual cultural and technical fest. It features welcome speeches, cultural performances, and the presence of chief guests and dignitaries. The event builds excitement and sets the tone for the fest.",
-      "date": "2025-03-10",
-      "time": "04:00 PM - 07:00 PM",
-      "venue": "Main Auditorium",
-      "department": "Cultural Committee",
-      "type": "cultural",
-      "organizer": "Fest Committee",
-      "contact": "fest@college.edu",
-      "image": "/FestInauguration.jpg"
-    },
-    {
-      "id": 33,
-      "title": "Debate Competition",
-      "description": "Debating contest on current social and political issues.",
-      "longdescription": "The Debate Competition provides a platform for students to express their opinions and argue logically on current topics. It improves public speaking, critical thinking, and persuasion skills, while encouraging awareness of social issues.",
-      "date": "2023-05-18",
-      "time": "02:00 PM - 06:00 PM",
-      "venue": "Seminar Hall A",
-      "department": "English Department",
-      "type": "cultural",
-      "organizer": "Debate Club",
-      "contact": "debate@college.edu",
-      "image": "/DebateCompetition.jpg"
-    },
-    {
-      "id": 34,
       "title": "Business Strategy Summit",
       "description": "A case competition testing strategic problem-solving skills.",
       "longdescription": "The Business Strategy Summit invites students to compete in solving real-world business cases. Teams present innovative strategies to panels of industry experts, gaining exposure, confidence, and practical knowledge.",
@@ -312,7 +183,7 @@
       "image": "/BusinessStrategySummit.jpg"
     },
     {
-      "id": 35,
+      "id": 17,
       "title": "Entrepreneurship Fair",
       "description": "Students showcase their startup ideas and prototypes.",
       "longdescription": "The Entrepreneurship Fair provides a platform for aspiring student entrepreneurs to pitch ideas, display prototypes, and network with investors and mentors. The event fosters creativity, innovation, and collaboration across the business community.",
@@ -326,7 +197,7 @@
       "image": "/EntrepreneurshipFair.jpg"
     },
     {
-      "id": 36,
+      "id": 18,
       "title": "Marketing Mania",
       "description": "A creative contest in advertising and brand strategy.",
       "longdescription": "Marketing Mania challenges students to design impactful campaigns, advertisements, and branding strategies. Teams showcase creativity while applying marketing theories in a real-world inspired contest judged by professionals.",
@@ -338,62 +209,6 @@
       "organizer": "Marketing Club",
       "contact": "marketing@college.edu",
       "image": "/MarketingMania.jpg"
-    },
-    {
-      "id": 37,
-      "title": "Finance Forum",
-      "description": "Workshops and talks on finance, investments, and markets.",
-      "longdescription": "The Finance Forum brings industry leaders and academicians together to conduct workshops and lectures on investment strategies, stock markets, and financial planning. Students gain practical exposure and insights into the financial world.",
-      "date": "2025",
-      "time": "09:00 AM - 02:00 PM",
-      "venue": "Seminar Hall",
-      "department": "Business Administration",
-      "type": "seminar",
-      "organizer": "Finance Society",
-      "contact": "finance@college.edu",
-      "image": "/FinanceForum.jpg"
-    },
-    {
-      "id": 38,
-      "title": "Quantum Mechanics Workshop",
-      "description": "Interactive sessions on quantum theory and applications.",
-      "longdescription": "The Quantum Mechanics Workshop introduces students to the fascinating world of quantum theory. Experts explain practical applications like quantum computing, cryptography, and advanced particle research in an engaging environment.",
-      "date": "2023",
-      "time": "10:00 AM - 01:00 PM",
-      "venue": "Physics Lecture Hall",
-      "department": "Physics",
-      "type": "workshop",
-      "organizer": "Physics Society",
-      "contact": "physics@college.edu",
-      "image": "/QuantumMechanicsWorkshop.jpg"
-    },
-    {
-      "id": 39,
-      "title": "Astrophysics Seminar",
-      "description": "Talks on galaxies, black holes, and cosmic discoveries.",
-      "longdescription": "The Astrophysics Seminar features lectures from leading astronomers about galaxies, black holes, and cosmic exploration. Students gain deep insights into the universe, astronomy tools, and ongoing space missions.",
-      "date": "2025",
-      "time": "02:00 PM - 05:00 PM",
-      "venue": "Science Auditorium",
-      "department": "Physics",
-      "type": "seminar",
-      "organizer": "Astronomy Club",
-      "contact": "astronomy@college.edu",
-      "image": "/AstrophysicsSeminar.jpg"
-    },
-    {
-      "id": 40,
-      "title": "Literary Festival",
-      "description": "A celebration of literature, poetry, and creative writing.",
-      "longdescription": "The Literary Festival brings together writers, poets, and students to celebrate creativity through readings, workshops, and competitions. It encourages young talent to express themselves and connect with literary traditions.",
-      "date": "2022",
-      "time": "09:00 AM - 04:00 PM",
-      "venue": "College Auditorium",
-      "department": "English",
-      "type": "festival",
-      "organizer": "Literary Society",
-      "contact": "literature@college.edu",
-      "image": "/LiteraryFestival.jpg"
     }
   ]
-} 
+}
